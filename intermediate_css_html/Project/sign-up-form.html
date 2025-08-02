@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="./sign-up.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="cover-area">
+        <div class="logo-text">
+          <div class="logo-container">
+            <div class="logo">
+              <img
+                src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png"
+                alt=""
+                height="120rem"
+                width="auto"
+              />
+            </div>
+
+            <div class="text-logo">ODIN</div>
+          </div>
+        </div>
+        <div class="filler"></div>
+        <div class="footer">
+          Powered by:
+          <a href="https://github.com/EmilDacillo-Git" class="git-link">
+            DavinciCodex</a
+          >
+        </div>
+      </div>
+      <div class="content-area">
+        <div class="content-text">
+          <p>
+            This is not a real online service! You know you need something
+            <br />
+            like this in your life to help you realize your deepest dreams.
+            <br />
+            Sign up now to get started. <br />
+            <br />
+            You <i>know </i>you want to.
+          </p>
+        </div>
+        <div class="form-container">
+          <h2>Let's do this!</h2>
+          <form id="create-account" action="#" method="post">
+            <div class="form-name">
+              <div>
+                <label for="first_name">FIRST NAME</label>
+                <br />
+                <input type="text" id="first_name" name="first_name" required />
+              </div>
+              <div>
+                <label for="last_name">LAST NAME</label>
+                <br />
+                <input type="text" id="last_name" name="last_name" required />
+              </div>
+            </div>
+            <div class="form-contact">
+              <div>
+                <label for="user_email">EMAIL</label>
+                <br />
+                <input
+                  type="email"
+                  id="user_email"
+                  name="user_email"
+                  required
+                />
+              </div>
+              <div>
+                <label for="user-number">PHONE NUMBER</label>
+                <br />
+                <input
+                  type="tel"
+                  id="user-number"
+                  name="user-number"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-password">
+              <div>
+                <label for="user-password">PASSWORD</label>
+                <br />
+                <input
+                  type="password"
+                  id="user-password"
+                  name="user-password"
+                  required
+                />
+              </div>
+              <div>
+                <label for="user-re-password">CONFIRM PASSWORD</label>
+                <br />
+                <input
+                  type="password"
+                  id="user-re-password"
+                  name="user-re-password"
+                  required
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="buttons">
+          <button type="submit" form="create-account">Create Account</button>
+          <p>Already have an account? <a href="#">Log in</a><p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
