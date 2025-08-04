@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar" id="room">
+        <div class="logo">
+          <span class="mdi mdi-view-dashboard"></span> Dashboard
+        </div>
+        <div class="menu" id="options">
+          <ul>
+            <li><span id="material-icon" class="mdi mdi-home"></span>Home</li>
+            <li>
+              <span
+                id="material-icon"
+                class="mdi mdi-card-account-details"
+              ></span>
+              Profile
+            </li>
+            <li>
+              <span id="material-icon" class="mdi mdi-message"></span> Messages
+            </li>
+            <li>
+              <span id="material-icon" class="mdi mdi-clock-time-three"></span>
+              History
+            </li>
+            <li>
+              <span id="material-icon" class="mdi mdi-note-multiple"></span>
+              Tasks
+            </li>
+            <li>
+              <span id="material-icon" class="mdi mdi-account-group"></span>
+              Communities
+            </li>
+          </ul>
+        </div>
+        <div class="options" id="options">
+          <ul>
+            <li>
+              <span id="material-icon" class="mdi mdi-cog"></span> Settings
+            </li>
+            <li>
+              <span id="material-icon" class="mdi mdi-help-box"></span> Support
+            </li>
+            <li>
+              <span id="material-icon" class="mdi mdi-shield-check"></span>
+              Privacy
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="header" id="room">
+        <div class="top-header">
+          <div class="search">
+            <img id="material-icon" src="./assets/magnify.svg" alt="magnify" />
+            <input class="search-bar" type="text" />
+          </div>
+          <div class="notification">
+            <img
+              id="material-icon"
+              src="./assets/bell-ring-outline.svg"
+              alt="notification"
+            />
+            <div class="circle">
+              <img
+                src="./assets/5109ab581ceb3c8a035cad82783c462d.jpg"
+                alt="LDV"
+              />
+            </div>
+            <h3>Leonardo Da Vinci</h3>
+          </div>
+        </div>
+        <div class="bottom-header">
+          <div class="user-profile">
+            <div class="user-icon">
+              <img
+                src="./assets/5109ab581ceb3c8a035cad82783c462d.jpg"
+                alt="LDV"
+              />
+            </div>
+            <div class="user-name">
+              <h4>Hi there,</h4>
+              <h2>Leonardo Da Vinci (@MonaLisa)</h2>
+            </div>
+          </div>
+          <div class="cta-btn">
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
+          </div>
+        </div>
+      </div>
+      <div class="dashboard" id="room"></div>
+    </div>
+  </body>
+</html>
