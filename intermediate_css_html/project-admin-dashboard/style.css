@@ -26,12 +26,6 @@ ul {
     "sidebar dashboard";
 }
 
-/* #room {
-  border-style: solid;
-  border-width: 1px;
-  border-color: black;
-} */
-
 .sidebar {
   grid-area: sidebar;
   display: flex;
@@ -62,7 +56,8 @@ ul {
   display: flex;
   flex-direction: column;
   padding: 1rem 5rem 1rem 3rem;
-   box-shadow: 0 9px 8px -2px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 9px 8px -2px rgba(0, 0, 0, 0.15);
+  z-index: 1;
 }
 
 .header #material-icon {
@@ -75,7 +70,6 @@ ul {
   justify-content: space-between;
   height: 50%;
   width: 100%;
-  
 }
 
 .top-header div {
@@ -97,7 +91,7 @@ input {
 }
 .top-header .notification {
   display: flex;
-  gap: 3rem;
+  gap: 2rem;
 }
 .circle {
   width: 4rem;
@@ -114,44 +108,44 @@ input {
 }
 
 .bottom-header {
-    height: 50%;
+  height: 50%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.user-profile{
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
 }
 
-.user-name{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 0.25rem;
+.user-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.25rem;
 }
 
 .user-name h4,
 .user-name h2 {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-.cta-btn{
-    display: flex;
-    gap: 2rem;
+.cta-btn {
+  display: flex;
+  gap: 2rem;
 }
 
-.cta-btn button{
-    font-size: 1rem;
-    font-weight: bold;
-    background-color: #1992D4;
-    color: white;
-    border-style: none;
-    border-radius: 100px;
-    padding: 0.7rem 2rem;
+.cta-btn button {
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #1992d4;
+  color: white;
+  border-style: none;
+  border-radius: 100px;
+  padding: 0.7rem 2rem;
 }
 
 .user-icon {
@@ -170,4 +164,126 @@ input {
 
 .dashboard {
   grid-area: dashboard;
+  background-color: #e2e8f0;
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+}
+
+.project-board {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  padding: 1rem 2rem;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  gap: 1.5rem;
+  align-content: start;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+
+  background-color: white;
+  padding: 1rem;
+  height: 200px;
+
+  border-radius: 8px;
+  border-left: 8px solid #f0b429;
+}
+
+.card-content {
+  height: 80%;
+}
+
+.card-content p {
+  color: rgb(102, 102, 102);
+}
+
+.card-icon {
+  display: flex;
+  height: 20%;
+  gap: 1rem;
+  font-size: 1.5rem;
+  justify-content: right;
+}
+
+.update-board {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+
+}
+
+.announcement-board,
+.trend-board {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 3rem;
+
+}
+
+.announcement-container p,
+.announcement-container h4{
+  margin: 0;
+  padding: 0;
+  font-size: 0.9rem;
+}
+
+.announcement-container p{
+  color: rgb(102, 102, 102);
+}
+
+.announcement-container,
+.trend-container {
+  display: flex;
+  flex-direction: column;
+
+  background-color: white;
+  padding: 2rem;
+  gap: 2rem;
+  border-radius: 10px;
+
+}
+
+
+.trend {
+  display: flex;
+  gap: 1rem;
+}
+
+.trend p{
+  color: rgb(102, 102, 102);
+  font-size: .9rem;
+  margin-top: .3rem;
+}
+
+.trend-board .circle {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.trend-board img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+a,
+p {
+  text-decoration: none;
+  color:black;
+  margin: 0;
+  padding: 0;
+}
+
+.announcement{
+  padding-bottom: 2rem;
+}
+
+.announcement:not(:last-child) {
+  border-bottom: 1px solid #e0e0e0;
 }
