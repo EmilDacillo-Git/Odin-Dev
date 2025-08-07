@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ODIN | Library</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="left-header">
+          <img src="./assets/books.png" alt="book-icon" />
+          <h1>Library Dashboard</h1>
+        </div>
+        <div class="right-header">
+          <button id="new-book-btn">
+            <h3>New Book</h3>
+          </button>
+        </div>
+      </div>
+      <div class="content">
+        <!-- New Book Form -->
+
+        <div class="modal" id="addBookModal">
+          <form class="add-book-form" id="addBookForm">
+            <h3>Add new book</h3>
+            <input
+              class="input"
+              type="text"
+              id="title"
+              placeholder="Title"
+              required
+              maxlength="100"
+            />
+            <input
+              class="input"
+              type="text"
+              id="author"
+              placeholder="Author"
+              required
+              maxlength="100"
+            />
+            <input
+              class="input"
+              type="number"
+              id="pages"
+              placeholder="Pages"
+              required
+              max="10000"
+            />
+            <div class="is-read">
+              <label for="is-read">Have you read it?</label>
+              <input class="checkbox" type="checkbox" id="isRead" />
+            </div>
+            <div class="form-actions">
+              <button class="add-btn" type="submit">Add Book</button>
+              <button class="cancel-btn" type="button" id="cancel-btn">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
