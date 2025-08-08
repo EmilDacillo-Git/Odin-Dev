@@ -46,6 +46,7 @@ body {
 .content {
   grid-row: 2/3;
   background-color: #e2e8f0;
+  padding: 3rem;
 }
 
 .modal {
@@ -135,4 +136,63 @@ body {
 .cancel-btn {
   background-color: white;
   border: none;
+}
+
+.book-card h3 {
+  padding: 0;
+  margin: 0;
+}
+
+.book-card button {
+  margin-top: 1.5rem;
+  padding: 1rem 1.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+.book-card .remove-btn{
+  width: 24px;
+  height: auto;
+  align-self: center;
+  margin-top: 1rem;
+  cursor: pointer;
+  
+}
+
+.remove-btn:hover {
+  opacity: 0.4; /* click/hover feedback */
+}
+
+.read {
+  border: none;
+  color: white;
+  background-color: #3a2e75;
+}
+
+.not-read {
+  border: 2px solid #3a2e75;
+  color: #3a2e75;
+  background-color: white;
+}
+
+.book-card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 1.5rem 3rem;
+  border-top: 16px solid #3a2e75;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+
+.book-title {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.content #book-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  gap: 4rem;
 }

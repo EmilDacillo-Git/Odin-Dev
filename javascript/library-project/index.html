@@ -25,45 +25,48 @@
         </div>
       </div>
       <div class="content">
-        <!-- New Book Form -->
+        <div id="book-container"></div>
+      </div>
 
-        <div class="modal" id="addBookModal">
-          <form class="add-book-form" id="addBookForm">
-            <h3>Add new book</h3>
-            <input
-              class="input"
-              type="text"
-              id="title"
-              placeholder="Title"
-              required
-              maxlength="100"
-            />
-            <input
-              class="input"
-              type="text"
-              id="author"
-              placeholder="Author"
-              required
-              maxlength="100"
-            />
-            <input
-              class="input"
-              type="number"
-              id="pages"
-              placeholder="Pages"
-              required
-              max="10000"
-            />
-            <div class="is-read">
-              <label for="is-read">Have you read it?</label>
-              <input class="checkbox" type="checkbox" id="isRead" />
-            </div>
-            <div class="form-actions">
-              <button class="add-btn" type="submit">Add Book</button>
-              <button class="cancel-btn" type="button" id="cancel-btn">Cancel</button>
-            </div>
-          </form>
-        </div>
+      <!-- New Book Form -->
+      <div class="modal" id="addBookModal">
+        <form class="add-book-form" id="addBookForm">
+          <h3>Add new book</h3>
+          <input
+            class="input"
+            type="text"
+            id="title"
+            placeholder="Title"
+            required
+            maxlength="100"
+          />
+          <input
+            class="input"
+            type="text"
+            id="author"
+            placeholder="Author"
+            required
+            maxlength="100"
+          />
+          <input
+            class="input"
+            type="number"
+            id="pages"
+            placeholder="Pages"
+            required
+            max="10000"
+          />
+          <div class="is-read">
+            <label for="is-read">Have you read it?</label>
+            <input class="checkbox" type="checkbox" id="isRead" />
+          </div>
+          <div class="form-actions">
+            <button class="add-btn" type="submit">Add Book</button>
+            <button class="cancel-btn" type="button" id="cancel-btn">
+              Cancel
+            </button>
+          </div>
+        </form>
       </div>
     </div>
   </body>
