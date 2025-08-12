@@ -58,6 +58,7 @@ nav button {
   font-weight: 500;
   cursor: pointer;
   color: white;
+  padding: 1rem;
 }
 
 .nav-right {
@@ -70,7 +71,26 @@ nav img {
   max-height: auto;
 }
 
-#content {
+/* switching */
+/* .menu {
+  display: none;
+}
+
+.homePage {
+  display: none;
+}
+
+.recipeTab {
+  display: none;
+}
+
+.aboutUsTab {
+  display: none;
+} */
+
+/* Pages Layout */
+
+.homePage {
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("./assets/web-cover.jpg");
@@ -82,26 +102,26 @@ nav img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-gap: 2rem;
+  gap: 2rem;
   color: white;
 }
 
-#content h1 {
+.homePage h1 {
   font-size: 8rem;
   font-weight: 900;
- line-height: 7rem;
+  line-height: 7rem;
   max-width: 800px;
   text-align: center;
 }
 
-#content h4 {
+.homePage h4 {
   font-size: 2rem;
   font-weight: 500;
   letter-spacing: 2px;
   color: rgba(255, 255, 255, 0.9);
 }
 
-#content p {
+.homePage p {
   font-size: 1.5rem;
   max-width: 650px;
   font-weight: 200;
@@ -109,14 +129,29 @@ gap: 2rem;
   color: rgba(255, 255, 255, 0.9);
 }
 
-.menu-btn{
-    padding: 1.5rem 2rem;
-    font-size: 1.3rem;
-    font-weight: 500;
-    border-style: none;
-    background-color: transparent;
-    color: white;
-    border-top: 1px solid rgb(177, 151, 2);
-    border-bottom: 1px solid rgb(177, 151, 2);
-    cursor: pointer;
+.menubtn {
+  padding: 1.5rem 2rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  border-style: none;
+  background-color: transparent;
+  color: white;
+  border-top: 1px solid rgb(177, 151, 2);
+  border-bottom: 1px solid rgb(177, 151, 2);
+  cursor: pointer;
+}
+
+#recipePage {
+  height: 100vh;
+  background-color: aqua;
+}
+
+#aboutUsPage {
+  height: 100vh;
+  background-color: wheat;
+}
+
+#menuPage {
+  height: 100vh;
+  background-color: red;
 }
