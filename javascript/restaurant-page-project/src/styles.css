@@ -3,7 +3,7 @@
   padding: 0;
   font-family: "Inter", sans-serif;
 }
-
+@import url("https://fonts.cdnfonts.com/css/corma");
 body {
   min-height: 100vh;
 }
@@ -61,6 +61,11 @@ nav button {
   padding: 1rem;
 }
 
+nav button:hover{
+  color: #d6b706;
+  border-bottom: 1px solid #d6b706;
+}
+
 .nav-right {
   display: flex;
   gap: 1.5rem;
@@ -70,25 +75,6 @@ nav img {
   max-width: 60px;
   max-height: auto;
 }
-
-/* switching */
-/* .menu {
-  display: none;
-}
-
-.homePage {
-  display: none;
-}
-
-.recipeTab {
-  display: none;
-}
-
-.aboutUsTab {
-  display: none;
-} */
-
-/* Pages Layout */
 
 .homePage {
   height: 100vh;
@@ -141,17 +127,157 @@ nav img {
   cursor: pointer;
 }
 
+.menubtn:hover{
+  background-color: rgb(177, 151, 2);
+}
+
 #recipePage {
-  height: 100vh;
+  height: calc(100vh - 10vh);
   background-color: aqua;
+  display: flex;
+}
+
+.cover-photo {
+  width: 30%;
+  background-color: green;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("https://i.pinimg.com/736x/64/10/28/6410280ea008a6ca9e706e15cd288860.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+
+  padding: 0rem 2rem;
+  padding-bottom: 4rem;
+  gap: 1rem;
+
+  color: white;
+}
+
+.recipe-content {
+  width: 70%;
+  background-color: grey;
+
+  display: flex;
+}
+
+.food-info {
+  height: 50%;
+  background-color: #131718;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0rem 3rem;
+
+  width: auto;
+}
+
+.food-img-1,
+.food-img-2,
+.food-img-3 {
+  height: 50%;
+}
+
+.food-img-1 {
+  background-image: url("https://images.squarespace-cdn.com/content/v1/5a77726fd55b41858d2a4f77/bacde0be-beea-4324-a702-d61e61227c54/HoneySageTurkey-4.jpg?format=1000w");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.food-img-2 {
+  background-image: url("https://www.orchidsandsweettea.com/wp-content/uploads/2022/06/Buffalo-Wings-5-of-8.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.food-img-3 {
+  background-image: url("https://images.squarespace-cdn.com/content/v1/5a77726fd55b41858d2a4f77/1747877311337-BP1DOLRB6DXDRIL1TQ8E/image-asset.jpeg?format=300w");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.recipe {
+  display: flex;
+  flex-direction: column;
+  width: 34%;
+}
+
+.recipe p {
+  color: rgba(255, 255, 255, 0.8);
 }
 
 #aboutUsPage {
   height: 100vh;
   background-color: wheat;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-cover {
+  height: 300px;
+  color: rgba(255, 255, 255, 0.8);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://d3nrav7vo3lya8.cloudfront.net/categories/izakaya/izakaya-restaurant.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  font-size: 5rem;
+  letter-spacing: 0.3rem;
+  font-weight: bold;
+  padding-bottom: 2rem;
+}
+
+.about-content {
+  height: 100vh;
+  background-image: url("./assets/ingredients-near-pizza.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+
+  padding-top: 10rem;
+}
+
+.about-content h3 {
+  color: #f0a039;
+  font-family: "Norse";
+  font-size: 4rem;
+}
+
+.about-content h1 {
+  font-size: 6rem;
+  font-family: "Corma", sans-serif;
+}
+
+.about-content p {
+  text-align: center;
+  width: 1000px;
+  font-size: 1.3rem;
+  line-height: 3rem;
 }
 
 #menuPage {
   height: 100vh;
-  background-color: red;
 }

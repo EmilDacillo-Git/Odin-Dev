@@ -1,4 +1,5 @@
-import menuTab from "./menuPage";
+
+import recipeTab from "./recipePage";
 
 function hideAllPages() {
   const homePage = document.getElementById("content");
@@ -19,7 +20,11 @@ function hideAllPages() {
 
 function coverText() {
   const content = document.getElementById("content");
+  const header = document.querySelector('header');
   content.style.display = "flex";
+  header.style.position = "absolute";
+  header.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
+  header.style.border = 'none';
 
   const tagLine = document.createElement("h4");
   tagLine.textContent = "MORE FLAVOR FOR LESS";
@@ -38,7 +43,7 @@ function coverText() {
 
   menuBtn.addEventListener("click", () => {
     hideAllPages();
-    menuTab();
+    recipeTab();
   });
 
   content.append(tagLine, heading, subHeading, menuBtn);

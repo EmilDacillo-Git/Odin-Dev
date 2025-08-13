@@ -1,6 +1,5 @@
 import aboutUsTab from "./aboutUs";
 import coverText from "./coverText";
-import menuTab from "./menuPage";
 import recipeTab from "./recipePage";
 import "./styles.css";
 
