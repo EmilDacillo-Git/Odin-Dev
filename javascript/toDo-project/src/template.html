@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Just To-Do It</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=draft_orders"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="side-panel">
+        <div class="menu">
+          <div class="icon-text">
+            <img src="./assets/check-list.png" alt="check" />
+            <h1>ToDo.it</h1>
+          </div>
+          <div class="side-menu">
+            <a href="#" id="menu-btn"
+              ><span class="mdi mdi-home-outline"></span> Home</a
+            >
+          </div>
+          <div class="side-menu">
+            <a href="#" id="menu-btn"
+              ><span class="mdi mdi-calendar-today-outline"></span> Today</a
+            >
+          </div>
+          <div class="side-menu">
+            <a href="#" id="menu-btn"
+              ><span class="mdi mdi-view-week-outline"></span> Week</a
+            >
+          </div>
+          <hr />
+          <div id="project-sect">
+            <div class="project-head">
+              <div class="left">
+                <span class="mdi mdi-view-dashboard-outline"></span>
+                <h3>Projects</h3>
+              </div>
+              <div class="right">
+                <button id="new-project-btn">
+                  <span class="mdi mdi-plus"></span>
+                </button>
+              </div>
+            </div>
+
+            <div class="project-list">
+              <a id="project-index" href="#">sample</a>
+              <a id="project-index" href="#">sample</a>
+              <a id="project-index" href="#">sample</a>
+              <a id="project-index" href="#">sample</a>
+              <a id="project-index" href="#">sample</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <a class="social-icon" href=""><span class="mdi mdi-instagram"></span></a>
+          <a class="social-icon" href=""><span class="mdi mdi-facebook"></span></a>
+          <a class="social-icon" href=""><span class="mdi mdi-github"></span></a>
+          <a class="social-icon" href=""><span class="mdi mdi-linkedin"></span></a>
+        </div>
+      </div>
+    </div>
+    <div class="content-panel"></div>
+  </body>
+</html>
