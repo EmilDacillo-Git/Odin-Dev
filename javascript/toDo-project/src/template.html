@@ -34,20 +34,26 @@
             <h1>ToDo.it</h1>
           </div>
           <div class="side-menu">
-            <a href="#" id="menu-btn"
+            <a class="menu-btn" href="#" id="home-btn"
               ><span class="mdi mdi-home-outline"></span> Home</a
             >
           </div>
           <div class="side-menu">
-            <a href="#" id="menu-btn"
+            <a class="menu-btn" href="#" id="today-btn"
               ><span class="mdi mdi-calendar-today-outline"></span> Today</a
             >
           </div>
           <div class="side-menu">
-            <a href="#" id="menu-btn"
+            <a class="menu-btn" href="#" id="week-btn"
               ><span class="mdi mdi-view-week-outline"></span> Week</a
             >
           </div>
+          <div class="side-menu">
+            <a class="menu-btn" href="#" id="notes-btn"
+              ><span class="mdi mdi-note-outline"></span> Notes</a
+            >
+          </div>
+
           <hr />
           <div id="project-sect">
             <div class="project-head">
@@ -62,23 +68,60 @@
               </div>
             </div>
 
-            <div class="project-list">
-              <a id="project-index" href="#">sample</a>
-              <a id="project-index" href="#">sample</a>
-              <a id="project-index" href="#">sample</a>
-              <a id="project-index" href="#">sample</a>
-              <a id="project-index" href="#">sample</a>
-            </div>
+            <div id="project-list"></div>
           </div>
         </div>
         <div class="footer">
-          <a class="social-icon" href=""><span class="mdi mdi-instagram"></span></a>
-          <a class="social-icon" href=""><span class="mdi mdi-facebook"></span></a>
-          <a class="social-icon" href=""><span class="mdi mdi-github"></span></a>
-          <a class="social-icon" href=""><span class="mdi mdi-linkedin"></span></a>
+          <a class="social-icon" href=""
+            ><span class="mdi mdi-instagram"></span
+          ></a>
+          <a class="social-icon" href=""
+            ><span class="mdi mdi-facebook"></span
+          ></a>
+          <a class="social-icon" href=""
+            ><span class="mdi mdi-github"></span
+          ></a>
+          <a class="social-icon" href=""
+            ><span class="mdi mdi-linkedin"></span
+          ></a>
         </div>
       </div>
+      <div class="content-panel">
+        <div class="header">
+          <div class="left-header">
+            <h3>To-Do's</h3>
+          </div>
+          <div class="right-header">
+            <button>
+              <span class="mdi mdi-plus"></span>
+              Add To-Do
+            </button>
+          </div>
+        </div>
+        <div id="home-container">HOME</div>
+        <div id="today-container">TODAY</div>
+        <div id="week-container">WEEK</div>
+        <div id="notes-container">NOTES</div>
+      </div>
+      <div class="modal" id="addProjectModal">
+        <form class="add-project-form" id="addProjectForm">
+          <h3>Add new project</h3>
+          <input
+            class="input"
+            type="text"
+            id="title"
+            placeholder="Title"
+            required
+            maxlength="100"
+          />
+          <div class="form-actions">
+            <button class="add-btn" type="submit">Create</button>
+            <button class="cancel-btn" type="button" id="cancel-btn">
+              Cancel
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
-    <div class="content-panel"></div>
   </body>
 </html>
