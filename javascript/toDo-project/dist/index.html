@@ -1,1 +1,158 @@
-<head><script defer src="main.js"></script></head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Just To-Do It</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=draft_orders"
+    />
+  <script defer src="main.js"></script></head>
+  <body>
+    <div class="container">
+      <div class="side-panel">
+        <div class="menu">
+          <div class="icon-text">
+            <img src="97a54539834fd8529079.png" alt="check" />
+            <h1>ToDo.it</h1>
+          </div>
+          <div class="side-menu">
+            <a class="menu-btn" href="#" id="home-btn"
+              ><span class="mdi mdi-home-outline"></span> Home</a
+            >
+          </div>
+          <div class="side-menu">
+            <a class="menu-btn" href="#" id="today-btn"
+              ><span class="mdi mdi-calendar-today-outline"></span> Today</a
+            >
+          </div>
+          <div class="side-menu">
+            <a class="menu-btn" href="#" id="week-btn"
+              ><span class="mdi mdi-view-week-outline"></span> Week</a
+            >
+          </div>
+
+          <hr />
+          <div id="project-sect">
+            <div class="project-head">
+              <div class="left">
+                <span class="mdi mdi-view-dashboard-outline"></span>
+                <h3>Projects</h3>
+              </div>
+              <div class="right">
+                <button id="new-project-btn">
+                  <span class="mdi mdi-plus"></span>
+                </button>
+              </div>
+            </div>
+
+            <div id="project-list"></div>
+          </div>
+        </div>
+        <div class="footer">
+          <a class="social-icon" href="https://www.instagram.com/em.dcllo/"
+            ><span class="mdi mdi-instagram"></span
+          ></a>
+          <a class="social-icon" href="https://web.facebook.com/ThatGuyCalledEmil"
+            ><span class="mdi mdi-facebook"></span
+          ></a>
+          <a class="social-icon" href="https://github.com/EmilDacillo-Git"
+            ><span class="mdi mdi-github"></span
+          ></a>
+          <a class="social-icon" href="https://www.linkedin.com/in/emil-dacillo-225a52233/"
+            ><span class="mdi mdi-linkedin"></span
+          ></a>
+        </div>
+      </div>
+      <div class="content-panel">
+        <div class="header">
+          <div class="left-header">
+            <h3>To-Do's</h3>
+          </div>
+          <div class="right-header">
+            <button id="add-todo-btn">
+              <span class="mdi mdi-plus"></span>
+              Add To-Do
+            </button>
+          </div>
+        </div>
+        <div id="todo-container">
+          <div id="home-container"></div>
+          <div id="today-container"></div>
+          <div id="week-container"></div>
+        </div>
+      </div>
+      <div class="modal" id="addProjectModal">
+        <form class="add-project-form" id="addProjectForm">
+          <h3>Add new project</h3>
+          <input
+            class="input"
+            type="text"
+            id="title"
+            placeholder="Title"
+            required
+            maxlength="100"
+          />
+          <div class="form-actions">
+            <button class="add-btn" type="submit">Create</button>
+            <button class="cancel-btn" type="button" id="cancel-btn">
+              Cancel
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="modal" id="addToDoModal">
+        <form id="todo-form">
+          <h3>Add ToDo</h3>
+
+          <div class="todo-dropdown">
+            <label for="project-select">Choose Project:</label>
+            <select id="project-select" name="project">
+              <option value="" disabled selected hidden>
+                Select a project...
+              </option>
+            </select>
+          </div>
+          <div class="todo-date">
+            <label for="todo-date">Due Date:</label>
+            <input type="date" id="todo-date" name="date" required />
+          </div>
+          <div class="todo-task">
+            <label for="todo-task">Task:</label>
+            <textarea
+              type="text"
+              id="todo-task"
+              name="task"
+              maxlength="100"
+              required
+            ></textarea>
+          </div>
+          
+          <div class="form-actions">
+            <button class="add-btn" type="submit">Add ToDo</button>
+            <button class="cancel-btn" type="button" id="cancel-btn">
+              Cancel
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

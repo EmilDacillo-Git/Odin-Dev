@@ -48,11 +48,6 @@
               ><span class="mdi mdi-view-week-outline"></span> Week</a
             >
           </div>
-          <div class="side-menu">
-            <a class="menu-btn" href="#" id="notes-btn"
-              ><span class="mdi mdi-note-outline"></span> Notes</a
-            >
-          </div>
 
           <hr />
           <div id="project-sect">
@@ -72,16 +67,16 @@
           </div>
         </div>
         <div class="footer">
-          <a class="social-icon" href=""
+          <a class="social-icon" href="https://www.instagram.com/em.dcllo/"
             ><span class="mdi mdi-instagram"></span
           ></a>
-          <a class="social-icon" href=""
+          <a class="social-icon" href="https://web.facebook.com/ThatGuyCalledEmil"
             ><span class="mdi mdi-facebook"></span
           ></a>
-          <a class="social-icon" href=""
+          <a class="social-icon" href="https://github.com/EmilDacillo-Git"
             ><span class="mdi mdi-github"></span
           ></a>
-          <a class="social-icon" href=""
+          <a class="social-icon" href="https://www.linkedin.com/in/emil-dacillo-225a52233/"
             ><span class="mdi mdi-linkedin"></span
           ></a>
         </div>
@@ -92,16 +87,17 @@
             <h3>To-Do's</h3>
           </div>
           <div class="right-header">
-            <button>
+            <button id="add-todo-btn">
               <span class="mdi mdi-plus"></span>
               Add To-Do
             </button>
           </div>
         </div>
-        <div id="home-container">HOME</div>
-        <div id="today-container">TODAY</div>
-        <div id="week-container">WEEK</div>
-        <div id="notes-container">NOTES</div>
+        <div id="todo-container">
+          <div id="home-container"></div>
+          <div id="today-container"></div>
+          <div id="week-container"></div>
+        </div>
       </div>
       <div class="modal" id="addProjectModal">
         <form class="add-project-form" id="addProjectForm">
@@ -116,6 +112,41 @@
           />
           <div class="form-actions">
             <button class="add-btn" type="submit">Create</button>
+            <button class="cancel-btn" type="button" id="cancel-btn">
+              Cancel
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="modal" id="addToDoModal">
+        <form id="todo-form">
+          <h3>Add ToDo</h3>
+
+          <div class="todo-dropdown">
+            <label for="project-select">Choose Project:</label>
+            <select id="project-select" name="project">
+              <option value="" disabled selected hidden>
+                Select a project...
+              </option>
+            </select>
+          </div>
+          <div class="todo-date">
+            <label for="todo-date">Due Date:</label>
+            <input type="date" id="todo-date" name="date" required />
+          </div>
+          <div class="todo-task">
+            <label for="todo-task">Task:</label>
+            <textarea
+              type="text"
+              id="todo-task"
+              name="task"
+              maxlength="100"
+              required
+            ></textarea>
+          </div>
+          
+          <div class="form-actions">
+            <button class="add-btn" type="submit">Add ToDo</button>
             <button class="cancel-btn" type="button" id="cancel-btn">
               Cancel
             </button>
